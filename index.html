@@ -14,7 +14,7 @@
   <title>Custom Materialize Theme</title>
 </head>
 
-<body>
+<body class="scrollspy" id="home">
   <div class="navbar-fixed">
     <nav class="teal">
       <div class="container">
@@ -76,7 +76,7 @@
 
   <!-- Section: Search -->
 
-  <section class="section section-search teal darken-1 white-text center">
+  <section id="search" class="section section-search teal darken-1 white-text center scrollspy">
     <div class="container">
       <div class="row">
         <div class="col s12">
@@ -120,7 +120,7 @@
   </section>
 
   <!-- Section: Popular -->
-  <section class="section section-popular">
+  <section id="popular" class="section section-popular scrollspy">
     <div class="container">
       <div class="row">
         <h4 class="center"><span class="teal-text">Popular</span> Places</h4>
@@ -198,7 +198,7 @@
 
   <!-- Section: Gallery -->
 
-  <section class="section section-gallery">
+  <section id="gallery" class="section section-gallery scrollspy">
     <div class="container">
       <h4 class="center">
         <span class="teal-text">Photo </span> Gallery
@@ -250,7 +250,7 @@
 
   <!-- Section: Contact -->
 
-  <section class="section section-contact">
+  <section id="contact" class="section section-contact scrollspy">
     <div class="container">
       <div class="row">
         <div class="col s12 m6">
@@ -330,6 +330,10 @@
           "Bahamas": null,
         }
       });
+
+      // Init Scrollspy
+      $('.scrollspy').scrollSpy();
+
       
     });
   </script>
